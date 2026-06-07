@@ -1,0 +1,16 @@
+CREATE TABLE student
+(
+  sid number(3) not null,
+  sname varchar2(30) unique,
+  age number(2) primary key
+);
+insert into student values(101,'srinu',21);
+insert into student values(102,'raja',23);
+insert into student values(103,'mahendra',25);
+insert into student values(104,'manideepak',37);
+insert into student values(105,'chandra',32);
+insert into student values(107,'sumalatha',12);
+select * from student;
+insert into student values(108,'sumalatha',21);
+insert into student values(null,'mamatha',20);
+select * from student;
